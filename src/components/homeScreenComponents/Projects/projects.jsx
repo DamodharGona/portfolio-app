@@ -2,9 +2,9 @@ import React from "react";
 import ProjectBox from "./projectBox";
 import { TEXT_PRIMARY } from "@/constants/colors";
 import chatImage from "@/assets/images/chat application.webp";
-import portfolio from "@/assets/images/portfolio.webp";
 import taskSchedularImage from "@/assets/images/taskschedular.webp";
 import expenseImage from "@/assets/images/finance.svg";
+import portfolioImg from "@/assets/images/portfolio.webp";
 
 function ProjectComponent() {
   let projects = [
@@ -27,7 +27,7 @@ function ProjectComponent() {
       description:
         "A fully responsive  portfolio showcasing skills, projects, and contact form. Designed with a modern UI and built using reusable components and Tailwind.",
       techUsed: ["React.js", "Tailwind CSS"],
-      image: portfolio,
+      image: portfolioImg,
     },
     {
       title: "Expense Tracker App",
