@@ -1,20 +1,19 @@
-// tailwind.config.js
+import motion from "tailwindcss-motion";
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      fontFamily: {
-        inter: ["Inter", "sans-serif"],
-        spacegrotesk: ["SpaceGrotesk", "sans-serif"], // Changed from 'grotesk' to 'spacegrotesk'
+      keyframes: {
+        float: {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
       },
-      colors: {
-        react: "#61DAFB",
-        flutter: "#02569B",
-        tailwind: "#38BDF8",
-        supabase: "#3ECF8E",
-        firebase: "#FFCA28",
+      animation: {
+        float: "float 3s ease-in-out infinite",
       },
     },
   },
-  plugins: [],
+
+  plugins: [motion],
 };

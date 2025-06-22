@@ -55,12 +55,12 @@
 }
 
 @import "tailwindcss";
+@plugin "tailwindcss-motion";
 
 @theme {
   --font-Inter: Inter, "sans-serif";
   --font-SpaceGrotesk: SpaceGrotesk, "sans-serif";
 }
-@import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
