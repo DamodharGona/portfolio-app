@@ -10,9 +10,15 @@ function ShowCard() {
   };
   return (
     <div className="bg-black/10 z-50 backdrop-blur-xs  flex h-screen fixed inset-0 items-center justify-center ">
-      <div className=" flex flex-col bg-zinc-900  rounded-md border border-zinc-800 w-100 relative">
-        <div>
-          <img src={showDetails.image} className="rounded-t-md  w-full" />
+      <div className=" flex flex-col bg-zinc-900  rounded-md border border-zinc-800 w-1/2 relative">
+        <div className="flex rounded-tl-md rounded-tr-md">
+          {showDetails.technologies.map((technology, index) => {
+            return (
+              <div key={index} className="flex-1 border-r border-zinc-900">
+                <img className="h-full" src={technology.image} />
+              </div>
+            );
+          })}
         </div>
         <div className="flex flex-col p-5">
           <p className={`${TEXT_TERTIARY} font-SpaceGrotesk font-normal`}>

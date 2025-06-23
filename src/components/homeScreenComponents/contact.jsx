@@ -7,7 +7,9 @@ function ContactComponent() {
   return (
     <div className="flex flex-col">
       <p className={`${TEXT_TERTIARY} font-SpaceGrotesk font-light`}>Email</p>
-      <p className={`${TEXT_PRIMARY} font-SpaceGrotesk font-normal`}>
+      <p
+        className={`${TEXT_PRIMARY} font-SpaceGrotesk font-normal hover:cursor-pointer`}
+      >
         gonadamodharreddy999@gmail.com
       </p>
       <p className={`${TEXT_TERTIARY} font-SpaceGrotesk font-light mt-4 mb-2`}>
@@ -16,13 +18,17 @@ function ContactComponent() {
       <div className="flex flex-col gap-y-1">
         <div className="flex flex-row gap-x-2 items-center">
           <FaGithub color="white" />
-          <p className={`${TEXT_PRIMARY} font-SpaceGrotesk font-normal`}>
+          <p
+            className={`${TEXT_PRIMARY} font-SpaceGrotesk font-normal hover:motion-preset-seesaw-lg hover:cursor-pointer`}
+          >
             Github
           </p>
         </div>
         <div className="flex gap-x-2 items-center">
           <IoLogoLinkedin color="white" />
-          <p className={`${TEXT_PRIMARY} font-SpaceGrotesk font-normal`}>
+          <p
+            className={`${TEXT_PRIMARY} font-SpaceGrotesk font-normal hover:motion-preset-seesaw-lg hover:cursor-pointer`}
+          >
             LinkedIn
           </p>
         </div>

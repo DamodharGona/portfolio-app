@@ -1,23 +1,25 @@
 import React from "react";
-import HomeScrollContent from "./homeScroll";
 import { TEXT_PRIMARY, TEXT_TERTIARY } from "./constants/colors";
-import { FaRegCopyright } from "react-icons/fa6";
+import { Outlet, useNavigate } from "react-router-dom";
+import { FaRegCopyright } from "react-icons/fa";
 
 function HomePage() {
+  const navigate = useNavigate();
   return (
     <div className="">
-      {/* Fixed Background Layer */}
       <div className="fixed inset-0 bg-zinc-900 bg-cover">
         <div className="flex flex-col h-full mt-40 gap-y-45">
           <div className="flex gap-x-5 px-10 mb-8">
             <div>
               <p className={`${TEXT_TERTIARY} font-Inter font-normal`}>ABOUT</p>
               <p
+                onClick={() => navigate("/")}
                 className={`${TEXT_PRIMARY} font-SpaceGrotesk font-normal mt-3 hover:cursor-pointer hover:motion-preset-seesaw-lg`}
               >
                 Home
               </p>
               <p
+                onClick={() => navigate("/aboutScreen")}
                 className={`${TEXT_PRIMARY} font-SpaceGrotesk font-normal mt-2 hover:cursor-pointer hover:motion-preset-seesaw-lg`}
               >
                 About
@@ -65,7 +67,7 @@ function HomePage() {
       {/* Scrollable Content Layer */}
       <div className="relative z-10">
         <div className="mb-176">
-          <HomeScrollContent />
+          <Outlet />
         </div>
       </div>
     </div>

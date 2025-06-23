@@ -1,21 +1,25 @@
 import { Button } from "@/components/ui/button";
-import React, { useContext } from "react";
-import AboutComponent from "./components/homeScreenComponents/about";
-import MySkillsComponent from "./components/homeScreenComponents/MySkills/mySkills";
-import ProjectComponent from "./components/homeScreenComponents/Projects/projects";
+import React, { useContext, useEffect } from "react";
+import AboutComponent from "@/components/homeScreenComponents/about";
+import MySkillsComponent from "@/components/homeScreenComponents/MySkills/mySkills";
+import ProjectComponent from "@/components/homeScreenComponents/Projects/projects";
 import {
   TEXT_PRIMARY,
   TEXT_SECONDARY,
   TEXT_TERTIARY,
-} from "./constants/colors";
-import Form from "./components/homeScreenComponents/form";
-import ContactComponent from "./components/homeScreenComponents/contact";
-import { showContext } from "./context/showCardContext";
-import ShowCard from "./components/homeScreenComponents/showCard";
-import Practice from "./typeWriter";
+} from "@/constants/colors";
+import Form from "@/components/homeScreenComponents/form";
+import ContactComponent from "@/components/homeScreenComponents/contact";
+import { showContext } from "@/context/showCardContext";
+import ShowCard from "@/components/homeScreenComponents/showCard";
+import Practice from "@/typeWriter";
 
 function HomeScrollContent() {
   const { show } = useContext(showContext);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className=" bg-black">
@@ -46,8 +50,28 @@ function HomeScrollContent() {
         <div className="mt-80">
           <AboutComponent />
         </div>
-        <div className="mt-80 flex">
-          <MySkillsComponent />
+        <div className="mt-80 flex flex-col">
+          <div className="flex justify-between items-center mb-10 px-3">
+            {" "}
+            <div className="flex flex-col gap-x-2">
+              <p
+                className={`${TEXT_PRIMARY} font-Inter font-extrabold text-white text-5xl`}
+              >
+                My
+              </p>
+              <p
+                className={`${TEXT_PRIMARY} font-Inter font-extrabold text-white text-5xl`}
+              >
+                Skills
+              </p>
+            </div>
+            <p
+              className={`${TEXT_PRIMARY} font-SpaceGrotesk font-medium text-white`}
+            >
+              Here are some my skills I have learnt
+            </p>
+          </div>
+          <MySkillsComponent gridColumns="grid-cols-3" />
         </div>
         <div className="mt-80">
           <ProjectComponent />
@@ -63,7 +87,9 @@ function HomeScrollContent() {
             </p>
           </div>
           <div className="flex gap-x-10 mb-15">
-            <Form />
+            <div className="w-3/4">
+              <Form />
+            </div>
             <ContactComponent />
           </div>
         </div>

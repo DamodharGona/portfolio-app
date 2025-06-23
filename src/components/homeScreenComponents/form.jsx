@@ -7,7 +7,7 @@ function Form() {
     e.preventDefault();
   };
   return (
-    <div className="flex flex-col w-3/4">
+    <div className="flex flex-col">
       <form onSubmit={handleOnSubmit} className="flex flex-col">
         <label className={`${TEXT_PRIMARY} font-SpaceGrotesk font-medium mb-1`}>
           Name
