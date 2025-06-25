@@ -1,4 +1,3 @@
-import motion from "tailwindcss-motion";
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -14,6 +13,4 @@ module.exports = {
       },
     },
   },
-
-  plugins: [motion],
 };

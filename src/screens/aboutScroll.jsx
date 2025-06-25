@@ -6,6 +6,7 @@ import { TEXT_PRIMARY, TEXT_TERTIARY } from "@/constants/colors";
 import { showContext } from "@/context/showCardContext";
 import React, { useContext, useEffect } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { easeInOut, motion } from "framer-motion";
 
 function AboutScrollContent() {
   const { show } = useContext(showContext);
@@ -14,6 +15,10 @@ function AboutScrollContent() {
     window.scrollTo(0, 0);
   }, []);
 
+  const boxVariants = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
     <div className="bg-black">
       <div
@@ -24,27 +29,60 @@ function AboutScrollContent() {
       <div
         className={`${TEXT_PRIMARY} font-Inter font-medium text-8xl h-194 flex flex-col justify-center items-center`}
       >
-        <p>Aspiring</p>
-        <p>Developer</p>
-        <span className={`${TEXT_PRIMARY} motion-translate-y-loop-25`}>
+        <motion.p
+          variants={boxVariants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ ease: easeInOut, duration: 0.6 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          Aspiring
+        </motion.p>
+        <motion.p
+          variants={boxVariants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ ease: easeInOut, duration: 0.6, delay: 0.1 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          Developer
+        </motion.p>
+        <motion.span
+          variants={boxVariants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ ease: easeInOut, duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
+          className={`${TEXT_PRIMARY}`}
+        >
           <MdKeyboardArrowDown size={50} />
-        </span>
+        </motion.span>
       </div>
       <div className="py-20 px-20">
         <div>
           <hr className="h-px my-8 bg-gray-300/30 border-0" />
         </div>
-        <div className="flex gap-x-133">
+        <div className="flex gap-x-133 py-5">
           <p className={`${TEXT_PRIMARY} font-Inter font-medium text-2xl`}>
             About
           </p>
           <div className="flex flex-col gap-y-5">
-            <p
+            <motion.p
+              variants={boxVariants}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ ease: easeInOut, duration: 0.6 }}
+              viewport={{ once: true, amount: 0.3 }}
               className={`${TEXT_PRIMARY} font-SpaceGrotesk font-normal text-5xl`}
             >
               Fueled by a love for building, driven by a desire to solve.{" "}
-            </p>
-            <p
+            </motion.p>
+            <motion.p
+              variants={boxVariants}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ ease: easeInOut, duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true, amount: 0.3 }}
               className={`${TEXT_TERTIARY} font-SpaceGrotesk font-normal text-2xl`}
             >
               I’m an aspiring developer whose curiosity for creating things in
@@ -55,14 +93,14 @@ function AboutScrollContent() {
               at a time. Each roadblock became a stepping stone, and now,
               whether it’s a mobile app or a web platform, I see every problem
               as a chance to grow and create something meaningful.
-            </p>
+            </motion.p>
           </div>
         </div>
 
         <div>
           <hr className="h-px my-8 bg-gray-300/30 border-0" />
         </div>
-        <div className="flex gap-x-133">
+        <div className="flex gap-x-133 py-5">
           <p className={`${TEXT_PRIMARY} font-Inter font-medium  text-2xl`}>
             Skills
           </p>
@@ -72,21 +110,26 @@ function AboutScrollContent() {
         <div>
           <hr className="h-px my-8 bg-gray-300/30 border-0" />
         </div>
-        <div className="flex gap-x-113">
+        <div className="flex gap-x-113 py-5">
           <p className={`${TEXT_PRIMARY} font-Inter font-medium text-2xl`}>
             Technologies
           </p>
-          <p
+          <motion.p
+            variants={boxVariants}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ ease: easeInOut, duration: 0.6 }}
+            viewport={{ once: true, amount: 0.4 }}
             className={`${TEXT_PRIMARY} font-SpaceGrotesk font-normal text-5xl`}
           >
             React.js, Flutter, Java, Node.js
-          </p>
+          </motion.p>
         </div>
         <div>
           <hr className="h-px my-8 bg-gray-300/30 border-0" />
         </div>
 
-        <div className="flex gap-x-80">
+        <div className="flex gap-x-80 py-5">
           <div className="flex flex-col gap-y-4">
             <p className={`${TEXT_PRIMARY} font-Inter font-medium text-2xl`}>
               Contact

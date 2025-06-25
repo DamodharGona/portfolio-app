@@ -55,7 +55,6 @@
 }
 
 @import "tailwindcss";
-@plugin "tailwindcss-motion";
 
 @theme {
   --font-Inter: Inter, "sans-serif";

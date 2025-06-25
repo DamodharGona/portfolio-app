@@ -70,21 +70,19 @@ function MySkillsComponent({ gridColumns }) {
     },
   ];
   return (
-    <div className="p-3">
-      <div className={`grid grid-flow-row ${gridColumns} gap-5`}>
-        {skillInfo.map((skill, index) => {
-          return (
-            <SkillBox
-              key={index}
-              image={skill.image}
-              technologies={skill.technologies}
-              about={skill.about}
-              title={skill.title}
-              description={skill.description}
-            />
-          );
-        })}
-      </div>
+    <div className={`grid grid-flow-row ${gridColumns} gap-5`}>
+      {skillInfo.map((skill, index) => {
+        return (
+          <SkillBox
+            key={index}
+            image={skill.image}
+            technologies={skill.technologies}
+            about={skill.about}
+            title={skill.title}
+            description={skill.description}
+          />
+        );
+      })}
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectBox from "./projectBox";
-import { TEXT_PRIMARY } from "@/constants/colors";
 import chatImage from "@/assets/images/chat application.webp";
 import taskSchedularImage from "@/assets/images/taskschedular.webp";
 import expenseImage from "@/assets/images/finance.svg";
@@ -39,34 +38,18 @@ function ProjectComponent() {
   ];
 
   return (
-    <div className="p-3">
-      <div className="flex justify-between items-center mb-10">
-        {" "}
-        <div className="flex flex-col gap-x-2">
-          <p className={`${TEXT_PRIMARY} font-Inter text-5xl font-extrabold`}>
-            My
-          </p>
-          <p className={`${TEXT_PRIMARY} font-Inter text-5xl font-extrabold`}>
-            Projects
-          </p>
-        </div>
-        <p className={`${TEXT_PRIMARY}`}>
-          Here are some my projects I have built
-        </p>
-      </div>
-      <div className="grid grid-flow-row grid-cols-3 gap-5">
-        {projects.map((project, index) => {
-          return (
-            <ProjectBox
-              key={index}
-              title={project.title}
-              description={project.description}
-              image={project.image}
-              tags={project.techUsed}
-            />
-          );
-        })}
-      </div>
+    <div className="grid grid-flow-row grid-cols-3 gap-5">
+      {projects.map((project, index) => {
+        return (
+          <ProjectBox
+            key={index}
+            title={project.title}
+            description={project.description}
+            image={project.image}
+            tags={project.techUsed}
+          />
+        );
+      })}
     </div>
   );
 }

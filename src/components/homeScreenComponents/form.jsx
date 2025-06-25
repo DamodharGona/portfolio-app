@@ -28,7 +28,7 @@ function Form() {
           Message
         </label>
         <textarea
-          placeholder="Hi this is Damodar from example. Just wanted to say hi!"
+          placeholder="Hi this is Damodhar from example. Just wanted to say hi!"
           className={`${TEXT_SECONDARY} font-SpaceGrotesk font-normal border bg-gray-300/10 border-gray-400/20 rounded-md p-2 mb-3`}
         />
         <Button className="bg-white text-black font-SpaceGrotesk font-medium hover:bg-white">

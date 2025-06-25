@@ -9,6 +9,7 @@ import { RouterProvider } from "react-router";
 import HomePage from "./homePage";
 import AboutScrollContent from "./screens/aboutScroll";
 import HomeScrollContent from "./screens/homeScroll";
+import ProjectScrollContent from "./screens/projectScroll";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -20,6 +21,7 @@ function App() {
       children: [
         { index: true, element: <HomeScrollContent /> },
         { path: "/aboutScreen", element: <AboutScrollContent /> },
+        { path: "/projectScreen", element: <ProjectScrollContent /> },
       ],
     },
   ]);

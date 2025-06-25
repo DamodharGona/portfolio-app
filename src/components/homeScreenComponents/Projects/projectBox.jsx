@@ -1,32 +1,52 @@
-import { TEXT_PRIMARY, TEXT_SECONDARY } from "@/constants/colors";
+import { TEXT_PRIMARY, TEXT_TERTIARY } from "@/constants/colors";
 import React from "react";
+import { easeInOut, motion } from "framer-motion";
 
 function ProjectBox({ title, description, image, tags }) {
+  const boxVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0 },
+  };
   return (
     <div className="border border-gray-400/20 flex flex-col  bg-gray-300/10 w-fit rounded-md gap-y-3">
       <div>
-        <img
-          src={image}
-          className="w-full  rounded-t-md"
-          // style={{ height: "400px" }}
-        />
+        <img src={image} className="w-full  rounded-t-md" />
       </div>
       <div className="p-5">
-        <p className={`${TEXT_PRIMARY} font-Inter font-bold text-2xl mb-1`}>
+        <motion.p
+          variants={boxVariants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ ease: easeInOut, duration: 0.6 }}
+          viewport={{ once: true, amount: 0.3 }}
+          className={`${TEXT_PRIMARY} font-Inter font-bold text-2xl mb-1`}
+        >
           {title}
-        </p>
-        <p className={`${TEXT_SECONDARY} font-SpaceGrotesk font-normal mb-3`}>
+        </motion.p>
+        <motion.p
+          variants={boxVariants}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ ease: easeInOut, duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true, amount: 0.3 }}
+          className={`${TEXT_TERTIARY} font-SpaceGrotesk font-normal mb-3`}
+        >
           {description}
-        </p>
+        </motion.p>
         <div className="flex gap-x-2">
           {tags.map((tag, index) => {
             return (
-              <button
+              <motion.button
+                variants={boxVariants}
+                initial="hidden"
+                whileInView="visible"
+                transition={{ ease: easeInOut, duration: 0.6, delay: 0.4 }}
+                viewport={{ once: true, amount: 0.3 }}
                 key={index}
                 className="bg-white text-black w-fit rounded-2xl border px-2 text-sm"
               >
                 {tag}
-              </button>
+              </motion.button>
             );
           })}
         </div>
