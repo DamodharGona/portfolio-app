@@ -38,7 +38,7 @@ function ProjectComponent() {
   ];
 
   return (
-    <div className="grid grid-flow-row grid-cols-3 gap-5">
+    <div className="flex flex-col md:grid md:grid-flow-row  md:grid-cols-2 xl:grid xl:grid-flow-row xl:grid-cols-3  gap-5">
       {projects.map((project, index) => {
         return (
           <ProjectBox

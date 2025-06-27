@@ -5,29 +5,20 @@ import { TEXT_PRIMARY } from "./constants/colors";
 function Practice() {
   return (
     <>
-      <div className="flex">
-        <div
-          className={`${TEXT_PRIMARY} font-inter font-extrabold text-7xl flex gap-x-2`}
-        >
-          <p>Hi I'm</p>
-          <Typewriter
-            options={{ html: true, loop: true }}
-            onInit={(typewriter) => {
-              typewriter
-                .changeDelay(50)
-                .typeString("Damodhar Reddy Gona")
-                .callFunction(() => {
-                  console.log("String typed out!");
-                })
-                .pauseFor(3000)
-                .deleteAll()
-                .callFunction(() => {
-                  console.log("All strings were deleted");
-                })
-                .start();
-            }}
-          />
-        </div>
+      <div
+        className={`${TEXT_PRIMARY} flex flex-wrap justify-center font-inter font-extrabold text-3xl md:text-5xl md:flex-row xl:text-7xl xl:flex-row gap-x-2`}
+      >
+        <Typewriter
+          options={{ html: true, loop: true }}
+          onInit={(typewriter) => {
+            typewriter
+              .changeDelay(50)
+              .typeString("Damodhar Reddy Gona")
+              .pauseFor(3000)
+              .deleteAll()
+              .start();
+          }}
+        />
       </div>
     </>
   );

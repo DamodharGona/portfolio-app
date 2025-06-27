@@ -17,7 +17,7 @@ function AboutComponent() {
         whileInView="visible"
         transition={{ ease: easeInOut, duration: 0.6 }}
         viewport={{ once: true, amount: 0.3 }}
-        className={`${TEXT_PRIMARY} font-Inter font-extrabold text-5xl  mb-2`}
+        className={`${TEXT_PRIMARY} font-Inter font-extrabold text-3xl md:text-5xl  xl:text-5xl `}
       >
         About Me
       </motion.p>
@@ -27,7 +27,7 @@ function AboutComponent() {
         whileInView="visible"
         transition={{ ease: easeInOut, duration: 0.6, delay: 0.1 }}
         viewport={{ once: true, amount: 0.3 }}
-        className="w-1/2 text-gray-300/60 font-SpaceGrotesk font-normal text-xl"
+        className="w-full  md:w-full xl:w-1/2 text-gray-300/60 font-SpaceGrotesk font-normal md:text-xl xl:text-xl"
       >
         I'm an aspiring developer who loves building applications, whether it's
         mobile apps or web apps. I enjoy turning ideas into something real and

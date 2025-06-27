@@ -70,7 +70,9 @@ function MySkillsComponent({ gridColumns }) {
     },
   ];
   return (
-    <div className={`grid grid-flow-row ${gridColumns} gap-5`}>
+    <div
+      className={`flex flex-col gap-y-5 md:grid md:grid-flow-row ${gridColumns} md:gap-5`}
+    >
       {skillInfo.map((skill, index) => {
         return (
           <SkillBox

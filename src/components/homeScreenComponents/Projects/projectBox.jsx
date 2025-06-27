@@ -19,7 +19,7 @@ function ProjectBox({ title, description, image, tags }) {
           whileInView="visible"
           transition={{ ease: easeInOut, duration: 0.6 }}
           viewport={{ once: true, amount: 0.3 }}
-          className={`${TEXT_PRIMARY} font-Inter font-bold text-2xl mb-1`}
+          className={`${TEXT_PRIMARY} font-Inter font-bold text-xl mb-1 md:text-2xl md:mb-1 xl:text-2xl xl:mb-1`}
         >
           {title}
         </motion.p>
@@ -29,11 +29,11 @@ function ProjectBox({ title, description, image, tags }) {
           whileInView="visible"
           transition={{ ease: easeInOut, duration: 0.6, delay: 0.2 }}
           viewport={{ once: true, amount: 0.3 }}
-          className={`${TEXT_TERTIARY} font-SpaceGrotesk font-normal mb-3`}
+          className={`${TEXT_TERTIARY} font-SpaceGrotesk font-normal text-sm md:text-[16px] mb-3`}
         >
           {description}
         </motion.p>
-        <div className="flex gap-x-2">
+        <div className="flex gap-2 flex-wrap">
           {tags.map((tag, index) => {
             return (
               <motion.button

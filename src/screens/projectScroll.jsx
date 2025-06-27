@@ -14,8 +14,8 @@ function ProjectScrollContent() {
       >
         Damodhar Reddy Gona
       </div>
-      <div className="h-100 flex flex-col justify-center items-center">
-        <div className="flex">
+      <div className="h-100 flex flex-col justify-center items-center text-[min(10vw,6rem)]">
+        <div className="flex mb-5 md:mb-10 xl:mb-12">
           <motion.p
             initial={{
               y: 100,
@@ -23,7 +23,7 @@ function ProjectScrollContent() {
             }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, ease: easeInOut }}
-            className={`${TEXT_PRIMARY} font-Inter font-medium text-8xl`}
+            className={`${TEXT_PRIMARY} font-Inter font-medium`}
           >
             My
           </motion.p>
@@ -32,7 +32,7 @@ function ProjectScrollContent() {
             initial={{ y: 100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.1, ease: easeInOut }}
-            className={`${TEXT_PRIMARY} font-Inter font-medium text-8xl`}
+            className={`${TEXT_PRIMARY} font-Inter font-medium`}
           >
             Projects
           </motion.p>
@@ -44,11 +44,11 @@ function ProjectScrollContent() {
           }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3, ease: easeInOut }}
-          className="w-130 h-px mt-20 bg-gray-300/30 border-0"
+          className="w-[min(50vw,32rem)] h-px  bg-gray-300/30 border-0"
         />
       </div>
 
-      <div className="mt-20 py-18 px-10">
+      <div className="mt-20 py-18 px-5 md:px-8 xl:px-10">
         <ProjectComponent />
       </div>
     </div>

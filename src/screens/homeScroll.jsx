@@ -31,10 +31,18 @@ function HomeScrollContent() {
         </div>
         <div className="flex justify-center h-194 items-center">
           <div className="flex flex-col items-center justify-center mb-24">
-            <div>
-              <Practice />
+            <div className="flex flex-col md:flex-row md:gap-x-2 items-center">
+              <p
+                className={`${TEXT_PRIMARY} font-inter font-extrabold text-3xl md:text-5xl xl:text-7xl`}
+              >
+                Hi I'm
+              </p>
+              <div className="w-fit">
+                <Practice />
+              </div>
             </div>
-            <motion.p
+
+            <motion.div
               initial={{
                 y: 50,
                 opacity: 0,
@@ -48,11 +56,10 @@ function HomeScrollContent() {
                 y: 0,
                 opacity: 1,
               }}
-              className={`${TEXT_SECONDARY}`}
+              className={`${TEXT_SECONDARY} text-sm md:text-[16px]`}
             >
-              An Aspiring Developer
-            </motion.p>
-            x
+              An Aspiring Developer who loves coding
+            </motion.div>
           </div>
         </div>
         <div className="mt-50 px-5">
@@ -61,24 +68,28 @@ function HomeScrollContent() {
         <div className="mt-80 flex flex-col px-5">
           <div className="flex flex-col mb-10">
             <p
-              className={`${TEXT_PRIMARY} font-Inter font-extrabold text-white text-5xl`}
+              className={`${TEXT_PRIMARY} font-Inter font-extrabold text-white text-3xl md:text-5xl  xl:text-5xl`}
             >
               My
             </p>
             <p
-              className={`${TEXT_PRIMARY} font-Inter font-extrabold text-white text-5xl`}
+              className={`${TEXT_PRIMARY} font-Inter font-extrabold text-white text-3xl md:text-5xl  xl:text-5xl`}
             >
               Skills
             </p>
           </div>
-          <MySkillsComponent gridColumns="grid-cols-3" />
+          <MySkillsComponent gridColumns="md:grid-cols-3" />
         </div>
         <div className="mt-80 px-5">
           <div className="flex flex-col mb-10">
-            <p className={`${TEXT_PRIMARY} font-Inter text-5xl font-extrabold`}>
+            <p
+              className={`${TEXT_PRIMARY} font-Inter font-extrabold text-3xl md:text-5xl  xl:text-5xl`}
+            >
               My
             </p>
-            <p className={`${TEXT_PRIMARY} font-Inter text-5xl font-extrabold`}>
+            <p
+              className={`${TEXT_PRIMARY} font-Inter font-extrabold text-3xl md:text-5xl  xl:text-5xl`}
+            >
               Projects
             </p>
           </div>
@@ -86,8 +97,10 @@ function HomeScrollContent() {
           <ProjectComponent />
         </div>
         <div className="flex flex-col px-5 mt-80 py-3">
-          <div className="flex flex-col gap-x-1 mb-6">
-            <p className={`${TEXT_PRIMARY} font-Inter font-extrabold text-5xl`}>
+          <div className="flex flex-col gap-x-1 w-fit mb-6 md:w-1/2 ">
+            <p
+              className={`${TEXT_PRIMARY} font-Inter font-extrabold text-3xl md:text-5xl  xl:text-5xl`}
+            >
               Contact Me
             </p>
             <p className={`${TEXT_TERTIARY} font-SpaceGrotesk font-normal`}>
@@ -95,7 +108,7 @@ function HomeScrollContent() {
               this form
             </p>
           </div>
-          <div className="flex gap-x-10 mb-15">
+          <div className="flex flex-col gap-y-4 w-full md:flex-row md:gap-x-10 xl:flex-row xl:gap-x-10 mb-15">
             <div className="w-3/4">
               <Form />
             </div>

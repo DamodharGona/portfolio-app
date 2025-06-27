@@ -37,7 +37,7 @@ function SkillBox({ image, technologies, about, title, description }) {
           whileInView="visible"
           transition={{ ease: easeInOut, duration: 0.6 }}
           viewport={{ once: true, amount: 0.3 }}
-          className={`${TEXT_PRIMARY} font-Inter font-bold text-2xl mb-1`}
+          className={`${TEXT_PRIMARY} font-Inter font-bold text-xl mb-1 md:text-2xl md:mb-1 xl:text-2xl xl:mb-1`}
         >
           {title}
         </motion.p>
@@ -48,12 +48,12 @@ function SkillBox({ image, technologies, about, title, description }) {
           whileInView="visible"
           transition={{ ease: easeInOut, duration: 0.6, delay: 0.2 }}
           viewport={{ once: true, amount: 0.3 }}
-          className={`${TEXT_TERTIARY} font-SpaceGrotesk font-normal`}
+          className={`${TEXT_TERTIARY} font-SpaceGrotesk font-normal font-sm md:font-[16px] xl:font-[16px]`}
         >
           {about}
         </motion.p>
       </div>
-      <div className="flex gap-x-3">
+      <div className="flex flex-wrap gap-2 max-w-full">
         {technologies.map((technology, index) => {
           return (
             <motion.div
