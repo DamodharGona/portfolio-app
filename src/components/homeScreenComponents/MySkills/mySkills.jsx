@@ -9,7 +9,7 @@ import { IoLogoFirebase } from "react-icons/io5";
 import tailwindImage from "@/assets/images/tailwind.png";
 import supaBaseImage from "@/assets/images/supabase.webp";
 import firebaseImage from "@/assets/images/firebase.jpg";
-import webDevImage from "@/assets/images/websiteDevelopment.webp";
+import webDevImage from "@/assets/images/websitedevelopment.webp";
 import mobileDevImage from "@/assets/images/mobileDevelopment.png";
 import flutterImage from "@/assets/images/flutter.png";
 import reactImage from "@/assets/images/react.jpeg";
