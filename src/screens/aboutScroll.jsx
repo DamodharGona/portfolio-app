@@ -1,5 +1,5 @@
-import ContactComponent from "@/components/homeScreenComponents/contact";
-import Form from "@/components/homeScreenComponents/form";
+import ContactComponent from "@/components/homeScreenComponents/contact/contact";
+import Form from "@/components/homeScreenComponents/contact/form";
 import MySkillsComponent from "@/components/homeScreenComponents/MySkills/mySkills";
 import ShowCard from "@/components/homeScreenComponents/showCard";
 import { TEXT_PRIMARY, TEXT_TERTIARY } from "@/constants/colors";

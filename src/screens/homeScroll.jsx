@@ -7,8 +7,8 @@ import {
   TEXT_SECONDARY,
   TEXT_TERTIARY,
 } from "@/constants/colors";
-import Form from "@/components/homeScreenComponents/form";
-import ContactComponent from "@/components/homeScreenComponents/contact";
+import Form from "@/components/homeScreenComponents/contact/form";
+import ContactComponent from "@/components/homeScreenComponents/contact/contact";
 import { showContext } from "@/context/showCardContext";
 import ShowCard from "@/components/homeScreenComponents/showCard";
 import Practice from "@/typeWriter";
