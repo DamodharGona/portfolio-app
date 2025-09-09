@@ -3,7 +3,7 @@ import ProjectBox from "./projectBox";
 import chatImage from "@/assets/images/chat application.webp";
 import taskSchedularImage from "@/assets/images/taskschedular.webp";
 import expenseImage from "@/assets/images/finance.svg";
-import portfolioImg from "@/assets/images/portfolio.webp";
+import movieImage from "@/assets/images/movie.png";
 
 function ProjectComponent() {
   let projects = [
@@ -33,7 +33,7 @@ function ProjectComponent() {
         "Tailwind CSS",
         "Shadcn UI",
       ],
-      image: portfolioImg,
+      image: movieImage,
     },
     {
       title: "Expense Tracker App",

@@ -11,6 +11,9 @@ import { SiTypescript } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { SiSwagger } from "react-icons/si";
+import { SiPostman } from "react-icons/si";
+import { SiFastify } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { RiSupabaseFill } from "react-icons/ri";
 import { IoLogoFirebase } from "react-icons/io5";
@@ -18,6 +21,7 @@ import tailwindImage from "@/assets/images/tailwind.png";
 import supaBaseImage from "@/assets/images/supabase.webp";
 import firebaseImage from "@/assets/images/firebase.jpg";
 import webDevImage from "@/assets/images/websitedevelopment.webp";
+import backendImage from "@/assets/images/backend.webp";
 import mobileDevImage from "@/assets/images/mobileDevelopment.png";
 import flutterImage from "@/assets/images/flutter.png";
 import reactImage from "@/assets/images/react.jpeg";
@@ -81,6 +85,12 @@ function MySkillsComponent({ gridColumns }) {
           image: reactImage,
         },
         {
+          name: "Fastify.js",
+          Icon: <SiFastify />,
+          iconColor: "text-black",
+          image: reactImage,
+        },
+        {
           name: "PostgreSQL",
           Icon: <SiPostgresql />,
           iconColor: "text-blue-600",
@@ -96,9 +106,9 @@ function MySkillsComponent({ gridColumns }) {
       about:
         "Backend Development involves building server-side applications, APIs, and database systems that power web and mobile applications. It focuses on data management, security, and creating robust server infrastructure.",
       description:
-        "Developed RESTful API endpoints using Node.js and Express.js. Created database migrations with Knex.js for PostgreSQL and MySQL. Built secure authentication systems with JWT and integrated cross-platform services.",
+        "Developed RESTful API endpoints using Node.js, Express.js, and Fastify.js. Created database migrations with Knex.js for PostgreSQL and MySQL. Built secure authentication systems with JWT and integrated cross-platform services.",
 
-      image: webDevImage,
+      image: backendImage,
     },
     {
       title: "Mobile Development",
@@ -146,13 +156,13 @@ function MySkillsComponent({ gridColumns }) {
         },
         {
           name: "Postman",
-          Icon: <FaReact />,
+          Icon: <SiPostman />,
           iconColor: "text-orange-500",
           image: reactImage,
         },
         {
           name: "Swagger",
-          Icon: <FaReact />,
+          Icon: <SiSwagger />,
           iconColor: "text-green-600",
           image: reactImage,
         },

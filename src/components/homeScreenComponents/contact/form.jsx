@@ -13,7 +13,7 @@ function Form() {
       </label>
       <input
         placeholder="Damodhar"
-        className={`${TEXT_SECONDARY} font-SpaceGrotesk font-normal bg-gray-300/10 border border-gray-400/20 p-2 rounded-md mb-3`}
+        className={`${TEXT_SECONDARY} font-SpaceGrotesk font-normal bg-gray-300/10 border border-gray-400/20 p-2 rounded-md mb-3 `}
       />
 
       <label className={`${TEXT_PRIMARY} font-SpaceGrotesk font-medium mb-1`}>
