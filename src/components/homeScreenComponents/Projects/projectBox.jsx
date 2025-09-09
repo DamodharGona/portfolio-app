@@ -10,7 +10,7 @@ function ProjectBox({ title, description, image, tags }) {
   return (
     <div className="border border-gray-400/20 flex flex-col  bg-gray-300/10 w-fit rounded-md gap-y-3">
       <div>
-        <img src={image} className="w-full  rounded-t-md" />
+        <img src={image} className="w-full h-48 object-cover rounded-t-md" />
       </div>
       <div className="p-5">
         <motion.p
