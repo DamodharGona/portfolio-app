@@ -8,10 +8,10 @@ import portfolioImg from "@/assets/images/portfolio.webp";
 function ProjectComponent() {
   let projects = [
     {
-      title: "Real-Time Chat App",
+      title: "REALTIME CHAT APPLICATION",
       description:
-        "A responsive web-based chat application with real-time messaging, Google OAuth, and protected routes. Built with a Supabase backend and Tailwind for styling and layout.",
-      techUsed: ["React.js", "Tailwind CSS", "Supabase"],
+        "Built full-stack realtime chat application using React.js, Tailwind CSS, and Supabase, developing a responsive frontend for an optimal user experience. Integrated Supabase backend with PostgreSQL and implemented Google OAuth and email/password authentication with protected routes. Built realtime messaging using Supabase Channels and PostgreSQL triggers, enabling message timestamping and conversation history management.",
+      techUsed: ["React.js", "Supabase", "Tailwind CSS", "PostgreSQL"],
       image: chatImage,
     },
     {
@@ -22,10 +22,17 @@ function ProjectComponent() {
       image: taskSchedularImage,
     },
     {
-      title: "Developer Portfolio Website",
+      title: "FAVOURITE TV & MOVIE SHOWS",
       description:
-        "A fully responsive  portfolio showcasing skills, projects, and contact form. Designed with a modern UI and built using reusable components and Tailwind.",
-      techUsed: ["React.js", "Tailwind CSS"],
+        "Built full-stack web app using React.js, TypeScript, Tailwind CSS, and Shadcn UI for managing personal favorite movies and TV shows. Engineered backend with Node.js (Express), MySQL, and JWT authentication, supporting secure user accounts and CRUD operations.",
+      techUsed: [
+        "React.js",
+        "TypeScript",
+        "Node.js",
+        "MySQL",
+        "Tailwind CSS",
+        "Shadcn UI",
+      ],
       image: portfolioImg,
     },
     {
