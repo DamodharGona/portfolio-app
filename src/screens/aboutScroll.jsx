@@ -1,15 +1,12 @@
 import ContactComponent from "@/components/homeScreenComponents/contact/contact";
 import Form from "@/components/homeScreenComponents/contact/form";
 import MySkillsComponent from "@/components/homeScreenComponents/MySkills/mySkills";
-import ShowCard from "@/components/homeScreenComponents/showCard";
 import { TEXT_PRIMARY, TEXT_TERTIARY } from "@/constants/colors";
-import { showContext } from "@/context/showCardContext";
-import React, { useContext, useEffect } from "react";
+import React, { useEffect } from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { easeInOut, motion, useAnimation } from "framer-motion";
 
 function AboutScrollContent() {
-  const { show } = useContext(showContext);
   const controls = useAnimation();
 
   useEffect(() => {
@@ -115,7 +112,6 @@ function AboutScrollContent() {
           </p>
           <MySkillsComponent gridColumns="grid-cols-2" />
         </div>
-        {show && <ShowCard />}
         <div>
           <hr className="h-px my-2 md:my-6 xl:my-8 bg-gray-300/30 border-0" />
         </div>

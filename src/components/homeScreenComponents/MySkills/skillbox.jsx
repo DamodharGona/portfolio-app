@@ -1,16 +1,7 @@
 import { TEXT_PRIMARY, TEXT_TERTIARY } from "@/constants/colors";
-import { showContext, showDetailsContext } from "@/context/showCardContext";
-import React, { useContext } from "react";
-import { HiMiniViewfinderCircle } from "react-icons/hi2";
+import React from "react";
 import { easeInOut, motion } from "framer-motion";
 function SkillBox({ image, technologies, about, title, description }) {
-  const { setShow } = useContext(showContext);
-  const { setShowDetails } = useContext(showDetailsContext);
-  const handleOnclick = () => {
-    setShow(true);
-    const detail = { description: description, technologies: technologies };
-    setShowDetails(detail);
-  };
   const boxVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0 },
@@ -18,13 +9,6 @@ function SkillBox({ image, technologies, about, title, description }) {
   return (
     <div className="border border-zinc-800 p-4 flex flex-col bg-gray-300/10 rounded-md justify-between">
       <div className="mb-3">
-        <div className="flex justify-end mt-3 mb-5 mr-3">
-          <HiMiniViewfinderCircle
-            onClick={handleOnclick}
-            className={`text-white hover:cursor-pointer`}
-            size={30}
-          />
-        </div>
         <img
           src={image}
           className="border border-zinc-800 rounded-md mb-2"
