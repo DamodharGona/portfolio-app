@@ -139,7 +139,7 @@ function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div>
               <h4 className={`${TEXT_PRIMARY} font-semibold mb-3`}>Backend</h4>
-              <p className={TEXT_TERTIARY}>Node.js, Express, REST APIs, TypeScript</p>
+              <p className={TEXT_TERTIARY}>Node.js, Express, Fastify, REST APIs, TypeScript</p>
             </div>
             <div>
               <h4 className={`${TEXT_PRIMARY} font-semibold mb-3`}>Database</h4>
