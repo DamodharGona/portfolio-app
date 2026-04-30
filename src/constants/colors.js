@@ -1,3 +1,3 @@
-export const TEXT_PRIMARY = "text-white/90";
-export const TEXT_SECONDARY = "text-white/80";
-export const TEXT_TERTIARY = "text-white/50";
+export const TEXT_PRIMARY = "text-white";
+export const TEXT_SECONDARY = "text-gray-300";
+export const TEXT_TERTIARY = "text-gray-400";
