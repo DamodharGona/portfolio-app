@@ -102,7 +102,7 @@ function Home() {
                 <h3 className={`${TEXT_PRIMARY} text-lg font-semibold`}>
                   Backend Developer Intern — Dezoko
                 </h3>
-                <span className="text-sm text-gray-500 font-medium">Jan 2024 — Present</span>
+                <span className="text-sm text-gray-500 font-medium">Jan 2025 — Apr 2025</span>
               </div>
 
               <ul className={`${TEXT_TERTIARY} list-disc pl-5 space-y-2 leading-relaxed`}>
@@ -117,7 +117,7 @@ function Home() {
                 <h3 className={`${TEXT_PRIMARY} text-lg font-semibold`}>
                   Backend Developer Intern — KPN Farm Fresh
                 </h3>
-                <span className="text-sm text-gray-500 font-medium">Jun 2023 — Dec 2023</span>
+                <span className="text-sm text-gray-500 font-medium">Jul 2025 — Sep 2025</span>
               </div>
 
               <ul className={`${TEXT_TERTIARY} list-disc pl-5 space-y-2 leading-relaxed`}>
