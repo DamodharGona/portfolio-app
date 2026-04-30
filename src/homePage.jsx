@@ -74,6 +74,10 @@ function Home() {
                 appointments, and leaves.
               </p>
 
+               <p className={`${TEXT_TERTIARY} mb-6 leading-relaxed`}>
+                Handled real-world edge cases including overlapping schedules, timezone validation, and triage-based booking.
+              </p>
+
               <div className="flex flex-wrap gap-2">
                 <span className="text-[10px] uppercase tracking-wider bg-white/5 border border-white/10 px-2 py-1 rounded text-white/70">Node.js</span>
                 <span className="text-[10px] uppercase tracking-wider bg-white/5 border border-white/10 px-2 py-1 rounded text-white/70">PostgreSQL</span>
