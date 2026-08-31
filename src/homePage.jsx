@@ -17,7 +17,7 @@ function Home() {
           </h1>
 
          <p className={`${TEXT_SECONDARY} text-lg md:text-xl mb-6 font-medium`}>
-            Full Stack Engineer (Node.js • TypeScript • PostgreSQL • Google Cloud)
+            Backend-First Full Stack Engineer (Node.js • TypeScript • React • PostgreSQL)
           </p>
 
          <p className={`${TEXT_TERTIARY} max-w-2xl leading-relaxed`}>
