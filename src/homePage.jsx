@@ -85,6 +85,41 @@ function Home() {
                 <span className="text-[10px] uppercase tracking-wider bg-white/5 border border-white/10 px-2 py-1 rounded text-white/70">GCP</span>
               </div>
             </div>
+
+            {/* Job Tracker */}
+            <div className="bg-[#111111] border border-gray-800 p-6 rounded-xl hover:border-gray-600 transition-all group">
+              <h3 className={`${TEXT_PRIMARY} text-xl font-semibold mb-3 group-hover:text-white transition-colors`}>
+                Job Application Tracker
+              </h3>
+
+              <p className={`${TEXT_TERTIARY} mb-4 leading-relaxed`}>
+                Full stack tool to track job applications and evaluate resume-to-job-description
+                fit using AI, with dashboard analytics and encrypted API key storage.
+              </p>
+
+              <p className={`${TEXT_TERTIARY} mb-6 leading-relaxed`}>
+                Found and fixed multiple LLM reliability issues through adversarial testing —
+                fabricated metrics, verb/scope inflation, and unreliable self-reported match scores —
+                by moving score calculation into deterministic backend logic instead of trusting
+                model-generated arithmetic.
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                <span className="text-[10px] uppercase tracking-wider bg-white/5 border border-white/10 px-2 py-1 rounded text-white/70">React</span>
+                <span className="text-[10px] uppercase tracking-wider bg-white/5 border border-white/10 px-2 py-1 rounded text-white/70">Node.js</span>
+                <span className="text-[10px] uppercase tracking-wider bg-white/5 border border-white/10 px-2 py-1 rounded text-white/70">PostgreSQL</span>
+                <span className="text-[10px] uppercase tracking-wider bg-white/5 border border-white/10 px-2 py-1 rounded text-white/70">Gemini API</span>
+              </div>
+
+              <div className="mt-4 flex gap-4 text-sm">
+                <a href="https://job-tracker-ten-mu-33.vercel.app" target="_blank" rel="noopener noreferrer" className="text-white underline underline-offset-4 decoration-gray-700 hover:decoration-white transition-all">
+                  Live
+                </a>
+                <a href="https://github.com/DamodharGona/job-tracker" target="_blank" rel="noopener noreferrer" className="text-white underline underline-offset-4 decoration-gray-700 hover:decoration-white transition-all">
+                  GitHub
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -102,7 +137,7 @@ function Home() {
                 <h3 className={`${TEXT_PRIMARY} text-lg font-semibold`}>
                   Backend Developer Intern — Dezoko
                 </h3>
-                <span className="text-sm text-gray-500 font-medium">Jan 2025 — Apr 2025</span>
+                <span className="text-sm text-gray-500 font-medium">Jan 2026 — Apr 2026</span>
               </div>
 
               <ul className={`${TEXT_TERTIARY} list-disc pl-5 space-y-2 leading-relaxed`}>
