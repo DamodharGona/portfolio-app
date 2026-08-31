@@ -28,7 +28,7 @@ function Home() {
 
           <div className="mt-8 flex gap-4">
             <a
-              href="/Backend_Developer_NodeJS.pdf"
+              href="/Damodhar_Reddy_FullStack_Developer_new.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
