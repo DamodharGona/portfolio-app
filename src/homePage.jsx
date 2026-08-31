@@ -17,8 +17,8 @@ function Home() {
           </h1>
 
          <p className={`${TEXT_SECONDARY} text-lg md:text-xl mb-6 font-medium`}>
-  Full Stack Engineer (Node.js • TypeScript • PostgreSQL • Google Cloud)
-</p>
+            Full Stack Engineer (Node.js • TypeScript • PostgreSQL • Google Cloud)
+          </p>
 
          <p className={`${TEXT_TERTIARY} max-w-2xl leading-relaxed`}>
             Built and deployed a healthcare scheduling system handling appointments,
@@ -100,10 +100,10 @@ function Home() {
               </p>
 
               <p className={`${TEXT_TERTIARY} mb-6 leading-relaxed`}>
-                Found and fixed multiple LLM reliability issues through adversarial testing —
-                fabricated metrics, verb/scope inflation, and unreliable self-reported match scores —
-                by moving score calculation into deterministic backend logic instead of trusting
-                model-generated arithmetic.
+                Found and fixed several LLM reliability issues through hands-on testing,
+                including fabricated metrics, inflated verbs and scope, and unreliable
+                self-reported match scores. Fixed this by moving score calculation into
+                deterministic backend logic instead of trusting the model's own arithmetic.
               </p>
 
               <div className="flex flex-wrap gap-2">
