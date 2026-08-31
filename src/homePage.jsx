@@ -16,14 +16,16 @@ function Home() {
             Damodhar Reddy
           </h1>
 
-          <p className={`${TEXT_SECONDARY} text-lg md:text-xl mb-6 font-medium`}>
-            Backend Developer (Node.js • PostgreSQL • GCP)
-          </p>
+         <p className={`${TEXT_SECONDARY} text-lg md:text-xl mb-6 font-medium`}>
+  Full Stack Engineer (Node.js • TypeScript • PostgreSQL • Google Cloud)
+</p>
 
-          <p className={`${TEXT_TERTIARY} max-w-2xl leading-relaxed`}>
-            Built and deployed a healthcare scheduling system handling
-            appointments, triage, and role-based workflows used by doctors and
-            receptionists. Focused on scalable architectures and efficient data modeling.
+         <p className={`${TEXT_TERTIARY} max-w-2xl leading-relaxed`}>
+            Built and deployed a healthcare scheduling system handling appointments,
+            triage, and role-based workflows for doctors and receptionists. Also
+            built an AI-powered job application tracker, with hands-on work fixing
+            LLM reliability issues like fabricated metrics and unreliable
+            self-reported scoring.
           </p>
 
           <div className="mt-8 flex gap-4">
